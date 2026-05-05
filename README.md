@@ -257,6 +257,6 @@ Ce tableau de bord permet de suivre l’avancement des projets, d’identifier r
 Il transforme des données complexes en une vision claire et actionnable, au service du pilotage stratégique des projets chez Sanitoral.
 
 ---
-![Image 1](./modèle relationnel.png)
-![Image 2](./Tableau de bord.png)
+![Image 1](./modele-relationnel.png)
+![Image 2](./tableau-de-bord.png)
 
