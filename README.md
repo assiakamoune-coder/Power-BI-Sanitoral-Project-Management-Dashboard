@@ -44,10 +44,8 @@ sanitoral-project-management/
 
 ---
 
-## 📦 Livrables
-
-### 1. **Tableau de Bord Power BI** 
-📊 `Kamoune_Assia_1_Tableau_de_Bord_012026.pbix`
+## 📦 Livrable:
+[📄 **Tableau de bord**](./Kamoune_Assia_1_Tableau_de_Bord_012026.pbix)
 
 **Contenu :**
 - Visualisations interactives des données de projets
