@@ -255,3 +255,8 @@ Cela évite la multiplication des pages tout en garantissant une information per
 ## VALEUR AJOUTÉE 
 Ce tableau de bord permet de suivre l’avancement des projets, d’identifier rapidement les dérives de performance et de faciliter la prise de décision.
 Il transforme des données complexes en une vision claire et actionnable, au service du pilotage stratégique des projets chez Sanitoral.
+
+---
+![Image 1](./modèle relationnel.png)
+![Image 2](./Tableau de bord.png)
+
