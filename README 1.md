@@ -1,20 +1,12 @@
 # 📊 Sanitoral Project Management Dashboard
 
 Tableau de bord complet de gestion de projets pour **Sanitoral**, incluant l'analyse des données de planification, l'exécution réelle et les performances des livrables.
+Sanitoral pilote aujourd’hui de nombreux projets IT et Marketing dans plusieurs régions du monde.
+La difficulté n’est pas le manque de données, mais la capacité à identifier rapidement les projets qui nécessitent une attention particulière.
+L’objectif de ce tableau de bord est donc de fournir aux directeurs une vision claire, synthétique et actionnable de la performance des projets. »
 
 ---
 
-## 📋 Table des Matières
-
-- [Vue d'ensemble](#vue-densemble)
-- [Structure du Projet](#structure-du-projet)
-- [Livrables](#livrables)
-- [Données](#données)
-- [Utilisation](#utilisation)
-- [Stack Technologique](#stack-technologique)
-- [Auteur](#auteur)
-
----
 
 ## 🎯 Vue d'ensemble
 
@@ -113,9 +105,9 @@ sanitoral-project-management/
 ### 4. **Product Strategy Canvas**
 📝 `Mode_le_de_Product_Strategy_Canvas_a__comple_ter.docx`
 
-**Objectif :** Template pour la planification stratégique des produits Sanitoral
+**Objectif :** la planification stratégique des produits Sanitoral
 
-**Sections à compléter :**
+**Sections :**
 - Propositions de valeur
 - Segments de clients
 - Canaux de distribution
@@ -125,8 +117,6 @@ sanitoral-project-management/
 - Activités principales
 - Partenariats clés
 - Structure de coûts
-
-**Format :** Microsoft Word (.docx) - Éditable
 
 ---
 
@@ -164,59 +154,6 @@ sanitoral-project-management/
 - **Nombre de projets** : +150
 - **Nombre de phases** : ~999
 - **Pays représentés** : 20+ pays
-
----
-
-## 🚀 Utilisation
-
-### Pour les analystes métier
-
-1. **Ouvrir le Dashboard Power BI**
-   ```
-   → Double-cliquer sur Kamoune_Assia_1_Tableau_de_Bord_012026.pbix
-   → Sélectionner les filtres désiré (Pays, Type de projet, Période)
-   → Analyser les KPIs et les tendances
-   ```
-
-2. **Consulter le dictionnaire des données**
-   ```
-   → Ouvrir Dictionnaire_des_donne_es_2_.xlsx
-   → Identifier les champs nécessaires
-   → Vérifier les types de données et contextes
-   ```
-
-### Pour les développeurs / Data Engineers
-
-1. **Charger les données**
-   ```python
-   import pandas as pd
-   
-   # Charger le dataset principal
-   df = pd.read_excel('Donneg_es_Sanitoral_1_.xlsx', sheet_name='Projects_plans')
-   
-   # Consulter la structure
-   print(df.info())
-   print(df.head())
-   ```
-
-2. **Intégration avec des outils BI**
-   - Power BI : Connexion directe Excel ou connexion BDD
-   - Tableau : Import Excel ou requête SQL
-   - Looker Studio : Google Sheets ou API
-
-3. **Analyse Python/R**
-   ```python
-   # Exemple : Calculer les écarts Prévu vs Réel
-   df['Duration_Variance'] = df['Actual_Duration'] - df['Planned_Duration']
-   df['Cost_Variance'] = df['Actual_Cost'] - df['Planned_Cost']
-   ```
-
-### Planification produit
-
-1. **Utiliser le Strategy Canvas**
-   - Télécharger `Mode_le_de_Product_Strategy_Canvas_a__comple_ter.docx`
-   - Remplir chaque bloc avec les informations de votre stratégie
-   - Partager et collaborer avec l'équipe
 
 ---
 
@@ -276,49 +213,48 @@ sanitoral-project-management/
 - Informations contextuelles sur chaque pays
 - Type de partenariat : Affilié ou Distributeur
 
----
-
-## 🤝 Contribution
-
-Ce projet est actuellement en phase de **visualisation et analyse**. Pour contribuer :
-
-1. Vérifier les données dans le dictionnaire
-2. Valider les calculs d'écarts et KPIs
-3. Proposer de nouvelles visualisations Power BI
-4. Améliorer la documentation
 
 ---
 
-## 📧 Contact & Support
+##  LA LOGIQUE GLOBALE DU TABLEAU DE BORD 
+ Le tableau de bord est organisé pour permettre une lecture en trois niveaux :
+- une vue globale en haut, 
+- une priorisation des actions au centre, 
+- et un niveau de détail en bas pour faciliter la prise de décision.
+  
+---
 
-**Responsable du projet :** Assia Kamoune  
-**Dernière mise à jour :** Janvier 2026  
-**Version :** 1.0
-
-Pour toute question ou suggestion :
-- 📧 Email : [contact@sanitoral.com](mailto:contact@sanitoral.com)
-- 💬 Slack : #project-management
+## VUE GLOBALE – INDICATEURS CLÉS 
+En haut de la page, on retrouve les indicateurs clés du portefeuille de projets :
+- le nombre de projets en alerte, 
+- la dérive budgétaire, 
+- la dérive des délais et le respect des livrables.
+- Un seuil d’alerte à 15 % a été défini: Dès qu’un indicateur dépasse ce seuil, il apparaît en rouge afin de signaler un risque potentiel.
 
 ---
 
-## 📄 Licence
+## OÙ AGIR ? – PRIORISATION DES PROBLÈMES 
+- La partie centrale du tableau de bord permet d’identifier où concentrer les efforts.
+- La carte du monde met en évidence les pays dans lesquels les projets présentent le plus de dérives.
+- Les graphiques complémentaires permettent de comparer les performances par pays, par région ou par type de projet, IT ou Marketing.
+- 
+---
 
-Ce projet est **propriétaire à Sanitoral**. Tous les livrables et données sont confidentiels.
+## AGIR CONCRÈTEMENT – PROJETS À RISQUE 
+Une table synthétique présente les projets les plus critiques.
+Elle se concentre sur les projets identifiés comme ‘À risque’, et met en avant les cinq projets nécessitant une action prioritaire.
+Pour chaque projet, les écarts de coûts et de délais sont visibles, ce qui permet aux directeurs de passer rapidement de l’analyse à l’action.
 
 ---
 
-## 🎓 Glossaire
-
-| Terme | Définition |
-|-------|-----------|
-| **Phase** | Étape d'un projet (Planning, Initiation, Execution, Closure) |
-| **Écart** | Différence entre la valeur prévue et la valeur réelle |
-| **ROI** | Retour sur investissement (Return on Investment) |
-| **Affilié** | Partenaire commercialisant les services sous sa propre marque |
-| **Distributeur** | Partenaire revendant les services de Sanitoral |
-| **Délivrable** | Livrables tangibles remis aux clients |
-| **DXA** | Unité de mesure Microsoft Office (1440 DXA = 1 pouce) |
+##  ADAPTÉ À TOUS LES RÔLES 
+Ce tableau de bord est conçu pour être utilisé par le directeur général, les directeurs régionaux et les directeurs pays.
+L’ensemble des utilisateurs accède au même rapport, mais peut filtrer les données selon son périmètre grâce aux segments.
+Cela évite la multiplication des pages tout en garantissant une information pertinente pour chaque niveau de responsabilité.
 
 ---
 
-**Merci d'utiliser le tableau de bord Sanitoral !** 🎯
+## VALEUR AJOUTÉE 
+Ce tableau de bord permet de suivre l’avancement des projets, d’identifier rapidement les dérives de performance et de faciliter la prise de décision.
+Il transforme des données complexes en une vision claire et actionnable, au service du pilotage stratégique des projets chez Sanitoral.
+
